@@ -4,6 +4,26 @@ const chronometer = new Chronometer();
 const btnLeftElement = document.getElementById('btnLeft');
 const btnRightElement = document.getElementById('btnRight');
 
+
+btnLeftElement.onclick = function () {
+  if(btnLeftElement.className.value === 'btn start') {
+    return this.chronometer = start ();
+  }
+  if (btnLeftElement.className === 'btn stop') {
+    return this.chronometer = stop();
+  }
+  console.log(btnLeftElement);
+}
+btnRightElement.onclick = function () {
+  if(btnRightElement.className.value === 'btn reset') {
+    return this.chronometer = reset ();
+  }
+  if (btnRightElement.className === 'btn split') {
+    return this.chronometer = split ();
+  }
+}
+
+
 // get the DOM elements that will serve us to display the time:
 const minDecElement = document.getElementById('minDec');
 const minUniElement = document.getElementById('minUni');
@@ -18,11 +38,11 @@ function printTime() {
 }
 
 function printMinutes() {
-  // ... your code goes here
+  return innerHTML.value = `${this.getMinutes()}`;
 }
 
 function printSeconds() {
-  // ... your code goes here
+  return innerHTML.value = `${this.getSeconds()}`;
 }
 
 // ==> BONUS
@@ -39,7 +59,8 @@ function clearSplits() {
 }
 
 function setStopBtn() {
-  // ... your code goes here
+  
+  
 }
 
 function setSplitBtn() {
