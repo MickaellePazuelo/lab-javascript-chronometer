@@ -39,7 +39,7 @@ function printTime() {
 }
 
 function printMinutes() {
-  return innerHTML.value = `${this.getMinutes()}`;
+  return minUniElement.innerHTML = chronometer.getMinutes();
 }
 
 function printSeconds() {
